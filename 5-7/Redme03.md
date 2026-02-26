@@ -1,0 +1,10 @@
+SELECT *
+FROM employees
+WHERE manager_id IS NULL
+  AND name LIKE '%田%';
+
+確認
+ employee_id |   name    | department | salary | hire_date  | manager_id
+-------------+-----------+------------+--------+------------+------------
+        5673 | 高田 太郎 | 営業       |  55000 | 2019-06-15 |
+        5676 | 田中 一郎 | 営業       |  70000 | 2018-09-10 |
